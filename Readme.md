@@ -1,6 +1,8 @@
 
 # Wolfram Document Viewer
 
+[![View notebooks](https://www.wolframcloud.com/objects/user-fcd49e54-a538-4c96-b83c-283763b842da/dev/WDV/badge2.png)](https://www.wolframcloud.com/objects/user-fcd49e54-a538-4c96-b83c-283763b842da/dev/WDV/wdv_api?user=jfultz&repo=WolframDocViewer&branch=master)
+
 This is a package I wrote in a day or two to facilitate previews of notebooks on Github by creating a badge which links out to the Wolfram Cloud.
 
 ### Installing
