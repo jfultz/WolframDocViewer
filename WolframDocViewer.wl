@@ -18,7 +18,7 @@
 (*CloudPut[Get["credentials.wl"], CloudObject["dev/WDV/credentials.wl"], Permissions->"Private"];*)
 (*$BlobIndex = $CommitIndex = <| |>;*)
 (*CloudExport[Import["WolframDocViewer.wl","Text"],"Text",CloudObject["dev/WDV/WolframDocViewer.wl"]];*)
-(*CloudExport[Import["badge2.png","PNG"],"PNG",CloudObject["dev/WDV/badge2.png"]];*)
+(*CloudExport[Import["badge2.png","PNG"],"PNG",CloudObject["dev/WDV/badge2.png"], Permissions->"Public"];*)
 (*CloudExport[Import["nbicon.png","PNG"],"PNG",CloudObject["dev/WDV/nbicon.png"]];*)
 (*Scan[CloudDeploy[Get[#],CloudObject["dev/WDV/"<>#]]&,FileNames["*","Stylesheets"]];*)
 (*CloudDeploy[*)
