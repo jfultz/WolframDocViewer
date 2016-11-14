@@ -135,9 +135,9 @@ BuildDocumentObj[document_Association] :=
 DebuggifyNotebook[nbexpr_] := nbexpr /. Cell[CellGroupData[{Cell[_, "SlideShowNavigationBar", ___], cells__Cell}, _]] :> cells
 StylifyNotebook[nbexpr_] :=
 Module[{stylesheet = StyleDefinitions /. Options[nbexpr]},
-	If[MatchQ[stylesheet, FrontEnd`FileName[{"Wolfram"}, ("Function"|"Message"|"Guide"|"Tutorial")~~"PageStyles.nb", _]],
+	If[MatchQ[stylesheet, FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb"|"MessagePageStyles.nb"|"GuidePageStyles.nb"|"TutorialPageStyles.nb", _]],
 		nbexpr /. (StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, file_, _]) :>
-			(StyleDefinitions->CloudGet[CloudObject["dev/WDV/Wolfram/"<>file]]),
+			(StyleDefinitions->CloudGet[CloudObject["dev/WDV/Stylesheets/"<>file]]),
 		nbexpr
 	]
 ]
